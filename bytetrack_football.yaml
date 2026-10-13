@@ -1,0 +1,10 @@
+# ByteTrack settings tuned for a panning football camera.
+# track_buffer is in frames: 90 frames is about 3 seconds at 30 FPS, so a player
+# who is briefly hidden keeps the same ID instead of getting a new one.
+tracker_type: bytetrack
+track_high_thresh: 0.25
+track_low_thresh: 0.1
+new_track_thresh: 0.3
+track_buffer: 90
+match_thresh: 0.85
+fuse_score: True

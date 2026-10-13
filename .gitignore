@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# Footage, model weights and generated files (large / may be copyrighted)
+*.mp4
+*.avi
+*.mov
+*.pt
+output*/
+positions.csv
+ball.csv
+runs/
