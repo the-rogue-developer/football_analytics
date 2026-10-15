@@ -24,7 +24,7 @@ referees and staff). Right: the same players mapped onto a top-down pitch.*
 - **Merges broken IDs.** When a player leaves the frame and comes back with a new ID, the two are
   joined using team, timing and pitch position
 - **Computes** distance covered and top speed per player, plus team heatmaps and average positions
-- **Saves** results to CSV (`results/player_stats.csv`)
+- **Saves** results to CSV and plots to `results/`
 - **Estimates possession** by crediting the ball to the closest player in each frame
 
 ## Tech stack
@@ -44,7 +44,7 @@ A GPU makes a big difference. On Google Colab, choose Runtime → Change runtime
 
 The easiest way to run everything is the notebook:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/football-analytics/blob/main/football_analytics.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/football-analytics/blob/main/notebooks/football_analytics.ipynb)
 
 ## Usage
 
@@ -70,11 +70,11 @@ Tested on a 10-second clip with 20 outfield players visible (10 per team).
 | Distance covered | about 12 to 31 m |
 | Top speed (1-second window) | about 6 to 17 km/h |
 
-Full table: [`results/player_stats.csv`](results/player_stats.csv)
-
-| Team heatmap | Average positions |
+| Possession estimate | Team heatmaps (pitch coordinates) |
 |---|---|
-| ![Heatmap](results/heatmaps.png) | ![Average positions](results/avg_positions.png) |
+| ![Possession](assets/ball_possession.png) | ![Heatmaps](results/heatmaps.png) |
+
+![Average positions](results/avg_positions.png)
 
 These are **visible-region stats from a short clip**, a proof that the pipeline works, not match
 totals. Ten seconds is too short for meaningful heatmaps, so they show trails, not zones.
