@@ -1,15 +1,27 @@
+# Model weights (downloaded automatically by Ultralytics)
+*.pt
+
+# Videos (copyrighted footage and large outputs)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Ultralytics / tracker outputs
+runs/
+output/
+output.mp4
+tracked*.mp4
+
 # Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+venv/
 .venv/
+.env
 
-# Footage, model weights and generated files (large / may be copyrighted)
-*.mp4
-*.avi
-*.mov
-*.pt
-output*/
-positions.csv
-ball.csv
-runs/
+# OS files
+.DS_Store
+Thumbs.db
