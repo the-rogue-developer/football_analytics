@@ -1,6 +1,9 @@
-ultralytics>=8.3
+ultralytics
+supervision
 opencv-python
 numpy
 pandas
+scikit-learn
+scipy
 matplotlib
-lap>=0.5.12
+lap
